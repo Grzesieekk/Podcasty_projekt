@@ -1,9 +1,103 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Podcasty</title>
   </head>
-  <body></body>
+
+  <body>
+    <!-- SIDEBAR -->
+    <nav id="sidebar">
+      <div class="sidebar-element" id="logo">
+        <img src="assets/logosvg-white.svg" alt="logo" />
+      </div>
+
+      <ul>
+        <li>
+          <div class="sidebar-element">
+            <a class="sidebar-link"
+              ><img src="assets/home-white.svg" alt="Home" class="medium-icon"
+            /></a>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-element">
+            <a class="sidebar-link"
+              ><img
+                src="assets/comment-gray.svg"
+                alt="Podcasts"
+                class="medium-icon"
+            /></a>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-element">
+            <a class="sidebar-link"
+              ><img
+                src="assets/chart-pie-alt-gray.svg"
+                alt="Top Performing"
+                class="medium-icon"
+            /></a>
+          </div>
+        </li>
+        <li>
+          <div class="sidebar-element">
+            <a class="sidebar-link">
+              <img
+                src="assets/users-gray.svg"
+                alt="Podcasters"
+                class="medium-icon"
+            /></a>
+          </div>
+        </li>
+      </ul>
+
+      <div class="sidebar-element" id="settings">
+        <a class="sidebar-link">
+          <img
+            src="assets/settings-gray.svg"
+            alt="settings"
+            class="medium-icon"
+        /></a>
+      </div>
+    </nav>
+
+    <!-- TOPSECTION -->
+    <header id="topsection">
+      <div id="search-area">
+        <button type="submit">
+          <img src="assets/search.svg" alt="search icon" class="small-icon" />
+        </button>
+        <input name="user-search" type="text" placeholder="Search" />
+      </div>
+
+      <div id="profile-area">
+        <button id="notifications-button">
+          <img src="assets/bell.svg" alt="Notifications" class="medium-icon" />
+        </button>
+        <div>
+          <button id="configure-button">
+            <img
+              src="assets/menu-dots-vertical.svg"
+              alt="Configure"
+              class="medium-icon"
+            />
+          </button>
+          <div id="profile">
+            <span>MN</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- TOPPART -->
+    <div></div>
+
+    <!-- BOTTOMPART -->
+    <div></div>
+  </body>
+
+  <script src="javascript.js"></script>
 </html>
