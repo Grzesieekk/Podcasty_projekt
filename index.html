@@ -1,6 +1,6 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,58 +9,64 @@
 
   <body>
     <!-- SIDEBAR -->
-    <nav id="sidebar">
-      <div class="sidebar-element" id="logo">
-        <img src="assets/logosvg-white.svg" alt="logo" />
+    <aside id="sidebar">
+      <nav>
+        <ul>
+          <li id="logo">
+            <img src="assets/logosvg-white.svg" alt="logo" />
+          </li>
+          <li>
+            <a class="sidebar-link" href="#"
+              ><img src="assets/home-white.svg" alt="Home" class="medium-icon"
+            /></a>
+          </li>
+
+          <li>
+            <a class="sidebar-link" href="#"
+              ><img
+                src="assets/comment-gray.svg"
+                alt="Podcasts"
+                class="medium-icon"
+            /></a>
+          </li>
+
+          <li>
+            <a class="sidebar-link" href="#"
+              ><img
+                src="assets/chart-pie-alt-gray.svg"
+                alt="Top Performing"
+                class="medium-icon"
+            /></a>
+          </li>
+
+          <li>
+            <a class="sidebar-link" href="#">
+              <img
+                src="assets/users-gray.svg"
+                alt="Podcasters"
+                class="medium-icon"
+            /></a>
+          </li>
+
+          <li id="settings">
+            <a class="sidebar-link" href="#">
+              <img
+                src="assets/settings-gray.svg"
+                alt="settings"
+                class="medium-icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- HEADER -->
+    <header>
+      <!-- Mobile logo tylko używanie w trybie mobilnym -->
+      <div id="mobile-logo">
+        <img src="assets/logosvg-white.svg" alt="logo" class="medium-icon" />
       </div>
 
-      <ul>
-        <li class="sidebar-element">
-          <a class="sidebar-link" href="#"
-            ><img src="assets/home-white.svg" alt="Home" class="medium-icon"
-          /></a>
-        </li>
-
-        <li class="sidebar-element">
-          <a class="sidebar-link" href="#"
-            ><img
-              src="assets/comment-gray.svg"
-              alt="Podcasts"
-              class="medium-icon"
-          /></a>
-        </li>
-
-        <li class="sidebar-element">
-          <a class="sidebar-link" href="#"
-            ><img
-              src="assets/chart-pie-alt-gray.svg"
-              alt="Top Performing"
-              class="medium-icon"
-          /></a>
-        </li>
-
-        <li class="sidebar-element">
-          <a class="sidebar-link" href="#">
-            <img
-              src="assets/users-gray.svg"
-              alt="Podcasters"
-              class="medium-icon"
-          /></a>
-        </li>
-      </ul>
-
-      <div class="sidebar-element" id="settings">
-        <a class="sidebar-link" href="#">
-          <img
-            src="assets/settings-gray.svg"
-            alt="settings"
-            class="medium-icon"
-        /></a>
-      </div>
-    </nav>
-
-    <!-- TOPSECTION -->
-    <header id="topsection">
       <div id="search-area">
         <button>
           <img src="assets/search.svg" alt="search icon" class="small-icon" />
@@ -80,19 +86,161 @@
               class="medium-icon"
             />
           </button>
-          <div id="profile">
+          <button id="profile">
             <span>MN</span>
-          </div>
+          </button>
         </div>
       </div>
     </header>
 
-    <!-- TOPPART -->
-    <div></div>
+    <!-- MAIN -->
+    <main>
+      <div id="top-part">
+        <aside>
+          <div class="statistics">
+            <div>
+              <strong>+16%</strong>
+              <img
+                src="assets/download.svg"
+                alt="download icon"
+                class="small-icon"
+              />
+              <img />
+            </div>
+            <span>DOWNLOADS</span>
+            <h2>188,61</h2>
+          </div>
 
-    <!-- BOTTOMPART -->
-    <div></div>
+          <div class="statistics">
+            <div>
+              <strong>+8%</strong>
+              <img
+                src="assets/microphoneicon.svg"
+                alt="download icon"
+                class="small-icon"
+              />
+              <img />
+            </div>
+            <span>LIVE LISTENERS</span>
+            <h2>45,740</h2>
+          </div>
+        </aside>
+        <div id="advertisment">
+          <h2>Episode for Nov 20, 2026</h2>
+          <p>Published Nov 20, 2026, by Jerry</p>
+          <a>Check it</a>
+          <img src="assets/microphone.svg" alt="microphone" />
+        </div>
+      </div>
 
-    <script src="javascript.js"></script>
+      <div id="bottom-part">
+        <div id="chart-section">
+          <h3>Top Performing Podcasts</h3>
+
+          <!-- WAŻNE - chart składa się z 2 list od góry do dołu i od dołu do góry trzeba ostylizować aby mieć stopnie oraz wartości. Stopnie można uzyskać dzięki border-top na li -->
+          <div id="chart">
+            <ul id="stopnie">
+              <li>
+                <span>200k</span>
+              </li>
+              <li>
+                <span>150k</span>
+              </li>
+              <li>
+                <span>100k</span>
+              </li>
+              <li>
+                <span>50k</span>
+              </li>
+              <li id="stopien-zerowy">
+                <span>0</span>
+              </li>
+            </ul>
+            <ul id="wartosci">
+              <li>
+                <div id="stoic-2"></div>
+                <div id="stoic-1"></div>
+                <span>Stoic</span>
+              </li>
+
+              <li>
+                <div id="ws-1"></div>
+                <div id="ws-2"></div>
+                <span>Weekly Show</span>
+              </li>
+
+              <li>
+                <div id="sp-1"></div>
+                <div id="sp-2"></div>
+                <span>Stereo Pro</span>
+              </li>
+
+              <li>
+                <div id="downloads-chart-popup">
+                  <span>Downloads</span>
+                  <span id="featured">•</span>
+                  <strong>80k</strong>
+                </div>
+                <div id="rp-1"></div>
+                <div id="rp-2"></div>
+                <span>Run Podcast</span>
+              </li>
+
+              <li>
+                <div id="mb-1"></div>
+                <div id="mb-2"></div>
+                <span>Morning Brew</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <aside>
+          <button id="top-podcasters">Top Podcasters</button>
+          <button id="top-episodes">Top Episodes</button>
+          <ul>
+            <li>
+              <img
+                src="assets/avatar-earth.svg"
+                alt="Wade Warren"
+                class="medium-icon"
+              />
+              <div class="name-and-artist">
+                <strong>Earth Tones</strong>
+                <span>Wade Warren</span>
+              </div>
+              <span class="artist-time">2d</span>
+            </li>
+
+            <li>
+              <img
+                src="assets/avatar-around.svg"
+                alt="Guy Hawkins"
+                class="medium-icon"
+              />
+              <div class="name-and-artist">
+                <strong>Around the World</strong>
+                <span>Guy Hawkins</span>
+              </div>
+              <span class="artist-time">2d</span>
+            </li>
+
+            <li>
+              <img
+                src="assets/avatar-kids.svg"
+                alt="Adam Thorne"
+                class="medium-icon"
+              />
+              <div class="name-and-artist">
+                <strong>World of Kids</strong>
+                <span>Adam Thorne</span>
+              </div>
+              <span class="artist-time">3d</span>
+            </li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
   </body>
 </html>
